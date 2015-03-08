@@ -1,5 +1,5 @@
-mpir (2.6.0-1) unstable; urgency=low
+mpir (2.6.0-1) UNRELEASED; urgency=medium
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Initial release (Closes: #708391).
 
- -- Doug Torrance <profzoom@unknown>  Sun, 08 Mar 2015 00:04:57 -0600
+ -- Doug Torrance <dtorrance@monmouthcollege.edu>  Sun, 08 Mar 2015 03:41:15 -0500
