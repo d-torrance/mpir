@@ -1,0 +1,15 @@
+Description: Fix segfault when running tests/mpz/t-scan.
+Origin: https://groups.google.com/forum/#!topic/mpir-devel/oLk3gMULxu0/discussion
+Last-Update: 2015-03-08
+
+--- a/tests/mpz/t-scan.c
++++ b/tests/mpz/t-scan.c
+@@ -84,7 +84,7 @@
+ 
+               for (isize = 0; isize <= size; isize++)
+                 {
+-                  for (oindex = 0; oindex <= numberof (offset); oindex++)
++                  for (oindex = 0; oindex < numberof (offset); oindex++)
+                     {
+                       o = offset[oindex];
+                       if ((int) isize*GMP_NUMB_BITS < -o)
