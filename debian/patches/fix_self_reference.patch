@@ -1,0 +1,17 @@
+Description: Fix "Recursive variable 'MKDIR_P' references itself" error.
+Author: Doug Torrance <dtorrance@monmouthcollege.edu>
+Last-Update: 2015-03-08
+
+--- a/configure.in
++++ b/configure.in
+@@ -207,10 +207,6 @@
+ esac],
+ [enable_fat=no])
+ 
+-# Work around an autoconf bug
+-MKDIR_P=@mkdir_p@
+-AC_SUBST(MKDIR_P)
+-
+ # Table of compilers, options, and mpn paths.  This code has various related
+ # purposes
+ #
