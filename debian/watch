@@ -1,0 +1,2 @@
+version=3
+https://github.com/wbhart/mpir/tags/ /wbhart/mpir/archive/mpir-(.+)\.tar\.gz
