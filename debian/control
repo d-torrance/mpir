@@ -8,7 +8,14 @@ Homepage: http://mpir.org/
 Vcs-Git: https://github.com/d-torrance/mpir
 Vcs-Browser: https://github.com/d-torrance/mpir
 
-Package: mpir
+Package: libmpir11
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
+
+Package: libmpir-dev
+Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: <insert up to 60 chars description>
