@@ -1,5 +1,4 @@
 Source: mpir
-Section: math
 Priority: optional
 Maintainer: Doug Torrance <dtorrance@monmouthcollege.edu>
 Build-Depends: debhelper (>= 9), dh-autoreconf, texinfo, yasm
@@ -9,6 +8,7 @@ Vcs-Git: https://github.com/d-torrance/mpir
 Vcs-Browser: https://github.com/d-torrance/mpir
 
 Package: libmpir11
+Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: <insert up to 60 chars description>
