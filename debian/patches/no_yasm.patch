@@ -22,6 +22,14 @@ Last-Update: 2015-03-08
  
  # How to assemble, used with CFLAGS etc, see mpn/Makeasm.am.
  # Using the compiler is a lot easier than figuring out how to invoke the
+@@ -2980,7 +2980,6 @@
+ #        Right now automake isn't accepting the new AC_CONFIG_FILES scheme.
+ 
+ #     allways configure all subdirectorys , even if there are not going to be built , 
+-AC_CONFIG_SUBDIRS([yasm])
+ 
+ case $host in
+   *-w64-mingw*)
 --- a/mpn/Makeasm.am
 +++ b/mpn/Makeasm.am
 @@ -119,4 +119,4 @@
