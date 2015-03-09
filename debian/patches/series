@@ -2,3 +2,4 @@ no_lzma.patch
 fix_self_reference.patch
 fix_t-scan_segfault.patch
 no_yasm.patch
+no_texinfo.patch

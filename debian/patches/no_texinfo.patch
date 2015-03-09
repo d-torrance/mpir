@@ -1,0 +1,14 @@
+Description: Don't try and build texinfo files.
+ We removed them since they are released under a non-DFSG license.
+Author: Doug Torrance <dtorrance@monmouthcollege.edu>
+Last-Update: 2015-03-09
+
+--- a/doc/Makefile.am
++++ b/doc/Makefile.am
+@@ -22,6 +22,3 @@
+ 
+ 
+ EXTRA_DIST = isa_abi_headache
+-
+-info_TEXINFOS = mpir.texi
+-gmp_TEXINFOS = fdl.texi
