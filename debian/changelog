@@ -1,4 +1,4 @@
-mpir (2.6.0-1) UNRELEASED; urgency=medium
+mpir (2.6.0+dfsg1-1) UNRELEASED; urgency=medium
 
   * Initial release (Closes: #708391).
 
