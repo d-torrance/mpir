@@ -1,0 +1,3 @@
+# mpir is a fork of gmp, so it retains some of its code, including the line
+# lintian uses to check if gmp is an embedded library.
+embedded-library usr/lib/*/libmpir.so.11.0.0: gmp
