@@ -1,4 +1,3 @@
 usr/include/mpir.h
 usr/lib/*/libmpir.a
-usr/lib/*/libmpir.la
 usr/lib/*/libmpir.so
