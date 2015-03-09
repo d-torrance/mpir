@@ -2,6 +2,5 @@
 %:
 	dh $@  --with autoreconf
 
-
-
-
+get-orig-source:
+	uscan --verbose --rename --force-download
