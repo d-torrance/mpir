@@ -13,12 +13,18 @@ Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Pre-Depends: ${misc:Pre-Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Multiple precision integers and rationals
+ MPIR is an open source multiprecision integer (bignum) library forked from the
+ GMP (GNU Multi Precision) project. It consists of much code from past GMP
+ releases, in combination with much original contributed code.
 
 Package: libmpir-dev
 Section: libdevel
 Architecture: any
 Depends: libmpir11 (= ${binary:Version}), ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Multiple precision integers and rationals (developer tools)
+ MPIR is an open source multiprecision integer (bignum) library forked from the
+ GMP (GNU Multi Precision) project. It consists of much code from past GMP
+ releases, in combination with much original contributed code.
+ .
+ This package contains MPIR developer tools.
