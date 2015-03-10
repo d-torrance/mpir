@@ -19,6 +19,6 @@ Description: <insert up to 60 chars description>
 Package: libmpir-dev
 Section: libdevel
 Architecture: any
-Depends: libmpir11 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Depends: libmpir11 (= ${binary:Version}), ${misc:Depends}
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>
