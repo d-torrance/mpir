@@ -12,6 +12,7 @@ Package: libmpir11
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>
 
