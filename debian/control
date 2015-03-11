@@ -3,7 +3,7 @@ Section: science
 Priority: extra
 Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
 Uploaders: Doug Torrance <dtorrance@monmouthcollege.edu>
-Build-Depends: debhelper (>= 9), dh-autoreconf, texinfo, yasm
+Build-Depends: debhelper (>= 9), dh-autoreconf, yasm
 Standards-Version: 3.9.6
 Homepage: http://mpir.org/
 Vcs-Git: https://github.com/d-torrance/mpir
