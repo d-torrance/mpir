@@ -1,6 +1,6 @@
 Source: mpir
 Section: science
-Priority: optional
+Priority: extra
 Maintainer: Doug Torrance <dtorrance@monmouthcollege.edu>
 Build-Depends: debhelper (>= 9), dh-autoreconf, texinfo, yasm
 Standards-Version: 3.9.6
