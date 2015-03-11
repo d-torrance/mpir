@@ -1,19 +1,28 @@
 Description: Use system yasm instead of building included copy.
 Author: Doug Torrance <dtorrance@monmouthcollege.edu>
-Last-Update: 2015-03-08
+Last-Update: 2015-03-11
 
 --- a/configure.in
 +++ b/configure.in
-@@ -936,7 +936,7 @@
+@@ -935,8 +935,6 @@
+     any_32_testlist="sizeof-long-4"
      CALLING_CONVENTIONS_OBJS='x86call.lo x86check$U.lo'
  
-     # Currently yasm is only needed to build x86 assembly files on some hosts
+-    # Currently yasm is only needed to build x86 assembly files on some hosts
 -    want_yasm="yes"
-+    want_yasm="no"
      # Availability of rdtsc is checked at run-time.
      SPEED_CYCLECOUNTER_OBJ=pentium.lo
      
-@@ -1677,7 +1677,7 @@
+@@ -1291,8 +1289,6 @@
+     ;;
+ esac
+ 
+-AM_CONDITIONAL(BUILD_YASM, test "$want_yasm" = "yes")
+-
+ CFLAGS_or_unset=${CFLAGS-'(unset)'}
+ CPPFLAGS_or_unset=${CPPFLAGS-'(unset)'}
+ 
+@@ -1677,7 +1673,7 @@
  GMP_CHECK_LIBM_FOR_BUILD
  
  
@@ -22,7 +31,7 @@ Last-Update: 2015-03-08
  
  # How to assemble, used with CFLAGS etc, see mpn/Makeasm.am.
  # Using the compiler is a lot easier than figuring out how to invoke the
-@@ -2980,7 +2980,6 @@
+@@ -2980,7 +2976,6 @@
  #        Right now automake isn't accepting the new AC_CONFIG_FILES scheme.
  
  #     allways configure all subdirectorys , even if there are not going to be built , 
@@ -38,3 +47,16 @@ Last-Update: 2015-03-08
  .as.lo:
 -	$(LIBTOOL) --mode=compile --tag=CC $(top_srcdir)/strip_fPIC.sh $(top_builddir)$(MPIR_AS) -I $(top_builddir) $(OBJECT_FORMAT) $(GSYM_FLAG) -o $@ `test -f '$<' || echo '$(srcdir)/'`$<
 +	$(LIBTOOL) --mode=compile --tag=CC $(top_srcdir)/strip_fPIC.sh $(MPIR_AS) -I $(top_builddir) $(OBJECT_FORMAT) $(GSYM_FLAG) -o $@ `test -f '$<' || echo '$(srcdir)/'`$<
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -98,10 +98,6 @@
+ 
+ SUBDIRS = tests
+ 
+-if BUILD_YASM
+-SUBDIRS += yasm
+-endif
+-
+ SUBDIRS += mpn fft mpz mpq mpf printf scanf cxx tune doc
+ 
+ EXTRA_DIST = configfsf.guess configfsf.sub .gdbinit INSTALL.autoconf
