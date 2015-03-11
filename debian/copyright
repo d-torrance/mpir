@@ -1,39 +1,141 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: mpir
-Source: <url://example.com>
+Source: http://mpir.org/
 Files-Excluded: doc/*.texi doc/mpir.info* yasm
 
 Files: *
-Copyright: <years> <put author's name and email here>
-           <years> <likewise for another author>
-License: <special license>
- <Put the license of the package here indented by 1 space>
- <This follows the format of Description: lines in control file>
- .
- <Including paragraphs>
+Copyright: 2011-2012 The Code Cavern
+	   1987-2010 Free Software Foundation, Inc.
+	   2009 Robert Gerbicz
+	   2009, 2011 Brian Gladman <brg@gladman.plus.com>
+           2008-2010 William Hart <goodwillhart@googlemail.com>
+	   2009 David Harvey <d.harvey@unsw.edu.au>
+	   2008-2011 Jason Moxham <jason@njkfrudils.plus.com>
+	   2008 Peter Shrimpton
+	   2010 Gonzalo Tornaria
+	   2009 Paul Zimmermann <zimmermann@inria.inria.fr>
+License: LGPL-2.1+
 
-# If you want to use GPL v2 or later for the /debian/* files use 
-# the following clauses, or change it to suit. Delete these two lines
-Files: debian/*
-Copyright: 2015 Doug Torrance <profzoom@unknown>
+Files: errno.c gmp-impl.h mpirxx.h mpf/clears.c mpf/inits.c mpn/generic/and_n.c
+ mpn/generic/andn_n.c mpn/generic/com_n.c mpn/generic/dc_bdiv_q.c
+ mpn/generic/dc_bdiv_qr.c mpn/generic/dc_bdiv_qr_n.c mpn/generic/dc_divappr_q.c
+ mpn/generic/dc_div_q.c mpn/generic/dc_div_qr.c mpn/generic/dc_div_qr_n.c
+ mpn/generic/divexact.c mpn/generic/gcd_1.c mpn/generic/gcd.c
+ mpn/generic/gcdext_1.c mpn/generic/gcdext.c mpn/generic/gcdext_lehmer.c
+ mpn/generic/gcdext_subdiv_step.c mpn/generic/gcd_lehmer.c
+ mpn/generic/gcd_subdiv_step.c mpn/generic/get_str.c mpn/generic/hamdist.c
+ mpn/generic/hgcd2.c mpn/generic/hgcd.c mpn/generic/inv_divappr_q.c
+ mpn/generic/inv_div_q.c mpn/generic/inv_div_qr.c mpn/generic/ior_n.c
+ mpn/generic/iorn_n.c mpn/generic/matrix22_mul.c mpn/generic/nand_n.c
+ mpn/generic/nior_n.c mpn/generic/popcount.c mpn/generic/random2.c
+ mpn/generic/redc_2.c mpn/generic/rootrem.c mpn/generic/sb_bdiv_q.c
+ mpn/generic/sb_bdiv_qr.c mpn/generic/sb_divappr_q.c mpn/generic/sb_div_q.c
+ mpn/generic/sb_div_qr.c mpn/generic/scan0.c mpn/generic/scan1.c
+ mpn/generic/set_str.c mpn/generic/tdiv_q.c mpn/generic/tdiv_qr.c
+ mpn/generic/toom8h_mul.c mpn/generic/toom8_sqr_n.c
+ mpn/generic/toom_couple_handling.c mpn/generic/toom_eval_dgr3_pm1.c
+ mpn/generic/toom_eval_dgr3_pm2.c mpn/generic/toom_eval_pm2.c
+ mpn/generic/toom_eval_pm2exp.c mpn/generic/toom_eval_pm2rexp.c
+ mpn/generic/toom_interpolate_16pts.c mpn/generic/xnor_n.c mpn/generic/xor_n.c
+ mpn/generic/zero.c mpn/mips64/longlong_inc.h mpn/mips32/longlong_inc.h
+ mpq/clears.c mpq/inits.c mpq/md_2exp.c mpz/clears.c mpz/cong_2exp.c
+ mpz/divexact.c mpz/divis_2exp.c mpz/hamdist.c mpz/inits.c mpz/root.c
+ mpz/rootrem.c mpz/rrandomb.c mpz/scan0.c mpz/scan1.c mpz/tstbit.c
+ tune/set_strb.c tune/set_strp.c tune/set_strs.c
+Copyright: 1991-2012 Free Software Foundation, Inc.
+	   2010 Brian Gladman <brg@gladman.plus.com>
+	   2009-2010 William Hart <goodwillhart@googlemail.com>
+	   2009 David Harvey <d.harvey@unsw.edu.au>
+	   2011 Jason Moxham <jason@njkfrudils.plus.com>
+License: LGPL-3+
+
+Files: fft/adjust.c fft/adjust_sqrt2.c fft/butterfly_lshB.c
+ fft/butterfly_rshB.c fft/combine_bits.c fft/div_2expmod_2expp1.c
+ fft/fermat_to_mpz.c fft/fft_mfa_trunc_sqrt2.c fft/fft_mfa_trunc_sqrt2_inner.c
+ fft/fft_negacylic.c fft/fft_radix2.c fft/fft_trunc.c fft/fft_trunc_sqrt2.c
+ fft/ifft_mfa_trunc_sqrt2.c fft/ifft_negacyclic.c fft/ifft_radix2.c
+ fft/ifft_trunc.c fft/ifft_trunc_sqrt2.c fft/mul_2expmod_2expp1.c
+ fft/mul_fft_main.c fft/mul_mfa_trunc_sqrt2.c fft/mulmod_2expp1.c
+ fft/mul_trunc_sqrt2.c fft/normmod_2expp1.c fft/split_bits.c
+ mpn/generic/add_err1_n.c mpn/generic/add_err2_n.c mpn/generic/dc_bdiv_q_n.c
+ mpn/generic/dc_divappr_q_n.c mpn/generic/mulmid_basecase.c
+ mpn/generic/mulmid.c mpn/generic/mulmid_n.c mpn/generic/mulmod_bexpp1.c
+ mpn/generic/sub_err1_n.c mpn/generic/sub_err2_n.c mpn/generic/toom42_mulmid.c
+ tests/refmpn.c tests/fft/*.c tests/mpn/t-mulmid.c tune/tune-fft.c
+Copyright: 2009, 2011 William Hart <goodwillhart@googlemail.com>
+	   2009, 2010 David Harvey <d.harvey@unsw.edu.au>
+License: BSD-2-clause
+
+Files: fft/revbin.c
+Copyright: 2009 William Hart <goodwillhart@googlemail.com>
 License: GPL-2+
- This package is free software; you can redistribute it and/or modify
+
+Files: debian/*
+Copyright: 2015 Doug Torrance <dtorrance@monmouthcollege.edu>
+License: LGPL-2.1+
+
+License: LGPL-2.1+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+License: LGPL-3+
+ This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 2 of the License, or
+ the Free Software Foundation, either version 3 of the License, or
  (at your option) any later version.
  .
- This package is distributed in the hope that it will be useful,
+ This program is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  GNU General Public License for more details.
  .
  You should have received a copy of the GNU General Public License
- along with this program. If not, see <http://www.gnu.org/licenses/>
- .
- On Debian systems, the complete text of the GNU General
- Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-# Please also look if there are files or directories which have a
-# different copyright/license attached and list them here.
-# Please avoid to pick license terms that are more restrictive than the
-# packaged work, as it may make Debian's contributions unacceptable upstream.
+License: BSD-2-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice, this
+    list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation
+    and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: GPL-2+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License
+ as published by the Free Software Foundation; either version 2
+ of the License, or (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
