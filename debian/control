@@ -1,7 +1,7 @@
 Source: mpir
 Section: science
 Priority: extra
-Maintainer: Doug Torrance <dtorrance@monmouthcollege.edu>
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
 Build-Depends: debhelper (>= 9), dh-autoreconf, texinfo, yasm
 Standards-Version: 3.9.6
 Homepage: http://mpir.org/
