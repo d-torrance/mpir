@@ -1,5 +1,5 @@
 Source: mpir
-Section: libs
+Section: science
 Priority: optional
 Maintainer: Doug Torrance <dtorrance@monmouthcollege.edu>
 Build-Depends: debhelper (>= 9), dh-autoreconf, texinfo, yasm
