@@ -1,0 +1,17 @@
+We repack the MPIR source code for Debian for two reasons.
+
+- The Texinfo documentation files were released under the GNU Free Documentation
+  License, which does not meet the Debian Free Software Guidelines [1].
+
+- MPIR ships with an embedded copy of Yasm, an assembler.  Since we use the
+  Debian packaged version of Yasm instead during build, we remove it.
+
+This repacking is accomplished using uscan.  In particular, we declare the
+files to be removed using the Files-Excluded field in debian/copyright and add
+the +dfsgN suffix to the source tarball using the repacksuffix option in
+debian/watch.  In addition to running uscan manually, you may also use
+debian/rules get-orig-source.
+
+[1] https://wiki.debian.org/DFSGLicenses#GNU_Free_Documentation_License_.28GFDL.29
+
+ -- Doug Torrance <dtorrance@monmouthcollege.edu>, Wed, 11 Mar 2015 05:23:38 -0500
